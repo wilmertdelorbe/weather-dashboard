@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./styles/custom.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main class="dashboard">
+        <aside class="search-panel">
+            <h2>Find Weather for a City:</h2>
+            <form id="city-search">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button type="submit">Search</button>
+            </form>
+            <div id="search-history"></div>
+        </aside>
+        <section class="weather-display">
+            <div id="current-weather"></div>
+            <div id="forecast-weather"></div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.4/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.4/plugin/utc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.4/plugin/timezone.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
